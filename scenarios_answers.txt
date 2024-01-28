@@ -1,0 +1,33 @@
+Scenario 2: AWS SNS
+This architectural diagram shows a typical web client using the AWS services like S3, SNS. The whole
+service is hosted in the Amazon cloud.
+
+Here the client is either a web application or a native AWS client which uploads files to s3. The S3
+bucket is configured to send SNS(Simple Notification Service) upon receiving files.
+What needs to be the SNS topic type if the order in which messages are published and delivered is
+strictly preserved? Select One.
+A) Standard
+B) LIFO
+C) FIFO
+D) Strict
+
+ANSWER:  FIFO
+
+Scenario 3: Developer Associate
+The development team at a retail organization wants to allow a Lambda function in its AWS Account
+A to access a DynamoDB table in another AWS Account B.
+
+As a Developer Associate, which of the following solutions would you recommend? (Select One)
+A) Create a clone of the Lambda function in AWS Account B so that it can access the DynamoDB
+table in the same account.
+B) Add a resource policy to the DynamoDB table in AWS Account B to give access to the Lambda
+function in Account A.
+C) Create an IAM role in Account B with access to DynamoDB. Modify the trust policy of the
+execution role in Account A to allow the execution role of Lambda to assume the IAM role in
+Account B. Update the Lambda function code to add the AssumeRole API call.
+D) Create an IAM role in account B with access to DynamoDB. Modify the trust policy of the role in
+Account B to allow the execution role of Lambda to assume this role. Update the Lambda
+function code to add the AssumeRole API call.
+
+ANSWER: Create an IAM role in account B with access to DynamoDB. Modify the trust policy of the role in Account B to allow the execution role of Lambda to assume this role. Update the Lambda
+function code to add the AssumeRole API call.
